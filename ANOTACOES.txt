@@ -1,0 +1,9 @@
+instalando styled components:
+
+npm i styled-components@5.3.10
+
+última versão estável de 06/2023, pois a recente anda dando erros de instalação. tipagem necessária para usar:
+
+npm install --save-dev @types/styled-components @types/styled-components-react-native
+
+Essas instalações são de um pouco antes da documentação deste link mudar um pouco https://styled-components.com/docs/api#typescript
