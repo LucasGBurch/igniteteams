@@ -1,4 +1,4 @@
-instalando styled components:
+1) instalando styled components:
 
 npm i styled-components@5.3.10
 
@@ -7,3 +7,15 @@ npm i styled-components@5.3.10
 npm install --save-dev @types/styled-components @types/styled-components-react-native
 
 Essas instalações são de um pouco antes da documentação deste link mudar um pouco https://styled-components.com/docs/api#typescript
+
+2) CONFIGURAÇÃO DE ESTILOS E FONTES:
+
+Além da criação do @/types/styled.d.ts e do theme/index.ts, há uma biblioteca para aplicação de fontes no React Native.
+
+Instalamos ela utilizando não só o comando, como a fonte escolhida ao final para ser instalada:
+
+npx expo install @expo-google-fonts/roboto expo-font
+
+A partir daí, importamos ela logo depois do ThemeProvider. Para garantir que ela carregue antes, e já que não temos index.html no Native, a gente usa um hook useFonts com um ternário, antes de renderizar o componente principal dentro do App.
+
+Dessa forma, o componente só renderiza depois que as fontes carregaram apropriadamente.
