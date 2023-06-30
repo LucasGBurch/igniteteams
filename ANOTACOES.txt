@@ -19,3 +19,11 @@ npx expo install @expo-google-fonts/roboto expo-font
 A partir daí, importamos ela logo depois do ThemeProvider. Para garantir que ela carregue antes, e já que não temos index.html no Native, a gente usa um hook useFonts com um ternário, antes de renderizar o componente principal dentro do App.
 
 Dessa forma, o componente só renderiza depois que as fontes carregaram apropriadamente.
+
+3) Sobre o phosphor React Native:
+
+instalação: npx expo install phosphor-react-native -- --save
+
+precisa também do svg para Native: npx expo install react-native-svg
+
+
