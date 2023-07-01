@@ -3,6 +3,7 @@ import { Highlight } from '@components/Highlight';
 import { GroupCard } from '@components/GroupCard';
 
 import { Container } from './styles';
+import React from 'react';
 
 export function Groups() {
   return (
