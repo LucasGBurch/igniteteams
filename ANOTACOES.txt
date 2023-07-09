@@ -26,4 +26,6 @@ instalação: npx expo install phosphor-react-native -- --save
 
 precisa também do svg para Native: npx expo install react-native-svg
 
+Dá pra usar também o MaterialIcons da EXPO VECTOR-ICONS
+
 
