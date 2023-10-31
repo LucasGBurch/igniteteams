@@ -1,18 +1,18 @@
-import { ThemeProvider } from 'styled-components/native';
+import { ThemeProvider } from 'styled-components/native'
 import {
   useFonts,
   Roboto_400Regular,
   Roboto_700Bold,
-} from '@expo-google-fonts/roboto';
+} from '@expo-google-fonts/roboto'
 
-import theme from '@theme/index';
+import theme from 'src/theme'
 
-import { Groups } from '@screens/Groups';
-import { Loading } from '@components/Loading';
-import { StatusBar } from 'react-native';
+import { Groups } from '@screens/Groups'
+import { Loading } from '@components/Loading'
+import { StatusBar } from 'react-native'
 
 export default function App() {
-  const [fontsLoaded] = useFonts({ Roboto_400Regular, Roboto_700Bold });
+  const [fontsLoaded] = useFonts({ Roboto_400Regular, Roboto_700Bold })
 
   return (
     <ThemeProvider theme={theme}>
@@ -26,5 +26,5 @@ export default function App() {
         // Componente do R.Native para garantir que a fonte carregue antes do componente!!
       }
     </ThemeProvider>
-  );
+  )
 }
